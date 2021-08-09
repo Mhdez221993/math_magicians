@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
     
       <Typography variant='h2' component='h2' data-test='heading'>
-        First React App
+        Math Magicians
       </Typography>
       </header>
     </div>

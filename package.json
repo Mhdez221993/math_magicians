@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cy:run:": "npx cypress run",
-    "cy:1": "npx cypress run --spec"
+    "cy:run:": "cypress run",
+    "cy": "npx cypress run --spec"
   },
   "eslintConfig": {
     "extends": [
