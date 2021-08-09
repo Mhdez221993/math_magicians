@@ -3,6 +3,8 @@
 
 This is the first project of the Math Magicians application. We will set up the environment and tools needed to develop a React application.
 
+![screeshoot](./src/assess/math-magicians.png)
+
 ## Built With 
 - JavaScript
 - React
