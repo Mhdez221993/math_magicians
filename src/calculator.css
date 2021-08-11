@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr;
-  background-color: rgb(143, 141, 141);
+  /* background-color: rgb(53, 53, 53); */
 }
 
 .Display {
@@ -27,27 +27,33 @@
   padding: 10px;
 }
 
-.Keys {
+.buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  background-color: rgb(233, 229, 229);
+  background-color: rgb(153, 151, 151);
 }
 
-.Key {
+.button {
   width: 100%;
   height: 100%;
-  border: 0.5px solid rgb(143, 141, 141);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+
 }
 
-.Key:nth-child(17) {
+.btn {
+  width: 100%;
+  height: 100%;
+}
+
+.button:nth-child(17) {
   grid-area: 5 / 1 / 6 / 3;
 }
 
-.Key:nth-child(4n),
-.Key:last-child {
+.button:nth-child(4n) > .btn,
+.button:last-child > .btn {
   background-color: rgb(253, 87, 27);
 }

@@ -11,15 +11,15 @@ export default class Calculator extends React.Component {
     return (
       <div>
         <div className="Calculator">
-          <Display />
-          <Keys />
+          <Screen />
+          <Buttons />
         </div>
       </div>
     );
   }
 }
 
-class Display extends React.Component {
+class Screen extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
@@ -34,24 +34,24 @@ class Display extends React.Component {
   }
 }
 
-class Keys extends React.Component {
+class Buttons extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
-    this.keys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+    this.button = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   }
 
   render() {
     return (
-      <div className="Keys">
-        <MapKeys keys={this.keys} />
+      <div className="buttons">
+        <MapButtons keys={this.button} />
       </div>
     );
   }
 }
 
-const MapKeys = props => props.keys.map(key => (
-  <div key={key.toString()} className="Key">
-    <span>{key}</span>
+const MapButtons = props => props.keys.map(key => (
+  <div key={key.toString()} className="button">
+    <button className="btn" type="button">{key}</button>
   </div>
 ));
