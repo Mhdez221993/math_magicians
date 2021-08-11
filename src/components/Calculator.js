@@ -1,23 +1,8 @@
 /* eslint-disable  max-classes-per-file */
+/* eslint-disable react/prop-types */
+
 import React from 'react';
-
-export default class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-
-  render() {
-    return (
-      <div>
-        <div className="Calculator">
-          <Screen />
-          <Buttons />
-        </div>
-      </div>
-    );
-  }
-}
+import calculate from '../logic/calculate';
 
 class Screen extends React.Component {
   constructor(props) {
@@ -26,9 +11,15 @@ class Screen extends React.Component {
   }
 
   render() {
+    const {
+      value: {
+        next,
+        total,
+      },
+    } = this.props;
     return (
       <div className="Display">
-        <span className="Screen">0</span>
+        <span className="Screen">{next || total || '0'}</span>
       </div>
     );
   }
@@ -44,7 +35,7 @@ class Buttons extends React.Component {
   render() {
     return (
       <div className="buttons">
-        <MapButtons keys={this.button} />
+        <MapButtons keys={this.button} cb={this.props} />
       </div>
     );
   }
@@ -52,6 +43,40 @@ class Buttons extends React.Component {
 
 const MapButtons = props => props.keys.map(key => (
   <div key={key.toString()} className="button">
-    <button className="btn" type="button">{key}</button>
+    <button onClick={props.cb.handleClick} className="btn" type="button" value={key}>{key}</button>
   </div>
 ));
+
+export default class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event) {
+    event.preventDefault();
+    const newState = calculate(this.state, event.target.value);
+    const { total, next, operation } = newState;
+    this.setState({
+      total,
+      next,
+      operation,
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="Calculator">
+          <Screen value={this.state} />
+          <Buttons handleClick={this.handleClick} />
+        </div>
+      </div>
+    );
+  }
+}

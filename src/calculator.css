@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr;
+
   /* background-color: rgb(53, 53, 53); */
 }
 
@@ -41,7 +42,6 @@
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
-
 }
 
 .btn {
