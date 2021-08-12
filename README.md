@@ -1,7 +1,7 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
-# React Templete
+# Math Magicians
 
-This is the first project of the Math Magicians application. We will set up the environment and tools needed to develop a React application.
+In this project we will refactor the Calculator component we developed in the past projects. Instead of using class based components, we will use now hooks.
 
 ![screeshoot](./src/assess/math-magicians.png)
 
