@@ -13,10 +13,14 @@ const Calculator = () => {
     setItem(calculate(state, event.target.value));
   };
 
+  const { next, total, operation } = state;
+  const currValues = [total, operation, next].filter(v => v).map(v => v.padStart(2, ' '));
+  const curr = next || total || '0';
   return (
     <div>
       <div className="Calculator">
-        <Screen value={state} />
+        <Screen value={currValues} />
+        <Screen value={curr} />
         <Buttons handleClick={handleClick} />
       </div>
     </div>

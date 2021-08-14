@@ -2,16 +2,11 @@
 import React from 'react';
 
 const Screen = props => {
-  const {
-    value: {
-      next,
-      total,
-    },
-  } = props;
+  const { value } = props;
 
   return (
     <div className="Display">
-      <span className="Screen">{next || total || '0'}</span>
+      <span className="Screen">{ value }</span>
     </div>
   );
 };
