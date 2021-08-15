@@ -19,6 +19,7 @@ export default function calculate(obj, buttonName) {
       total: null,
       next: null,
       operation: null,
+      equalSign: false,
     };
   }
 
@@ -76,6 +77,7 @@ export default function calculate(obj, buttonName) {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,
         operation: null,
+        equalSign: true,
       };
     }
     // '=' with no operation, nothing to do
