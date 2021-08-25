@@ -5,7 +5,7 @@ In this project we will refactor the Calculator component we developed in the pa
 
 ![screeshoot](./src/assess/math-magicians.png)
 
-## Built With 
+## Built With
 - JavaScript
 - React
 - Webpack
@@ -14,7 +14,7 @@ In this project we will refactor the Calculator component we developed in the pa
 - Jest
 - Cypress
 
-
+[Live Demo](https://mhdez221993.github.io/math-magicians/)
 ## Getting Started
 
 If you want a copy of this file go to the github repository and download it from there

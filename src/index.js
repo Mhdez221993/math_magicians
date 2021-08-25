@@ -1,12 +1,12 @@
 import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './calculator.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <App />
     </Router>
   </React.StrictMode>,
