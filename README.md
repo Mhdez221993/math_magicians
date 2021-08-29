@@ -15,6 +15,7 @@ In this project we will refactor the Calculator component we developed in the pa
 - Cypress
 
 [Live Demo](https://mhdez221993.github.io/math-magicians/)
+[heroku live](https://math-agicians-01.herokuapp.com/)
 ## Getting Started
 
 If you want a copy of this file go to the github repository and download it from there
