@@ -14,8 +14,10 @@ In this project we will refactor the Calculator component we developed in the pa
 - Jest
 - Cypress
 
-[Live Demo](https://mhdez221993.github.io/math-magicians/)
-[heroku live](https://math-agicians-01.herokuapp.com/)
+
+[heroku live](https://fimath-magicians-001.herokuapp.com/) <br>
+
+[heroku live](https://jolly-mclean-9a88f6.netlify.app/)
 ## Getting Started
 
 If you want a copy of this file go to the github repository and download it from there
