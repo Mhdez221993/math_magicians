@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "big.js": "^6.1.1",
+    "eslint-config-airbnb": "^18.2.1",
     "gh-pages": "^3.2.3",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
@@ -49,10 +50,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "cypress": "^8.2.0",
     "eslint": "^7.11.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.6",
