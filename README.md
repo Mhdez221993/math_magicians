@@ -1,6 +1,7 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 # Math Magicians
-
+A calculator app that provides simple mathematical functions in a beautifully designed app.
+Perform basic calculations such as addition, subtraction, multiplication, and division
 In this project we will refactor the Calculator component we developed in the past projects. Instead of using class based components, we will use now hooks.
 
 ![screeshoot](./src/assess/math-magicians.png)
