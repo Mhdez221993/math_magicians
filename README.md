@@ -36,8 +36,6 @@ npm start
 
 ## Available Scripts
 
-### `npm run e2s`
-
 In the project directory, you can run:
 
 ### `npm start`
