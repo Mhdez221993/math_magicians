@@ -12,8 +12,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb", "plugin:react/recommended",  "plugin:cypress/recommended"],
-  "plugins": ["react", "cypress"],
+  "extends": ["airbnb", "plugin:react/recommended"],
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
@@ -24,8 +23,5 @@
   "ignorePatterns": [
     "dist/",
     "build/"
-  ],
-  "globals": {
-    "cy": true
-  }
+  ]
 }

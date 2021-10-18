@@ -1,21 +1,24 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Math Magicians
+
 A calculator app that provides simple mathematical functions in a beautifully designed app.
 Perform basic calculations such as addition, subtraction, multiplication, and division
 
 ![screeshoot](./src/assess/math-magicians.png)
 
 ## Built With
+
 - JavaScript
 - React
 - Webpack
 - HTML/SCSS
 - Node.JS
 - Jest
-- Cypress
 
 [Live Demo](https://mhdez221993.github.io/math-magicians/)
 [heroku live](https://math-magicians-001.herokuapp.com/math-magicians/)
+
 ## Getting Started
 
 If you want a copy of this file go to the github repository and download it from there
@@ -34,7 +37,6 @@ npm start
 ## Available Scripts
 
 ### `npm run e2s`
-To run end to end test with cypress
 
 In the project directory, you can run:
 
@@ -67,7 +69,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
@@ -80,6 +81,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 npx eslint .
 npx stylelint "**/*.{css,scss}"
 ```
+
 - Autofix linters errors
 
 ```cmd
@@ -101,7 +103,6 @@ npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-s
 - Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050)
 - LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/)
 
-
 =======
 
 ## 🤝 Contributing
@@ -119,7 +120,7 @@ Give a ⭐️ if you like this project!
 =======
 
 ## Acknowledgments
+
 - Microverse for giving me this chance
 - To my Stand Up Team and coding partners who kept my morale up!
 - The amazing code reviewers for making me improve every day :thumbsup:
-
