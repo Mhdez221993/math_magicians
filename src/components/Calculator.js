@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import getCurrOperation from '../logic/getCurrOperation';
 import Buttons from './Buttons';
 import Screen from './Screen';
 
@@ -15,13 +14,11 @@ const Calculator = () => {
   };
 
   const {
-    next, total, operation, equalSign,
+    next, total,
   } = state;
   const curr = next || total || '0';
-  const currOperation = getCurrOperation([total, operation, next, equalSign]);
   return (
     <div className="Calculator">
-      <Screen value={[currOperation]} />
       <Screen value={curr} />
       <Buttons handleClick={handleClick} />
     </div>

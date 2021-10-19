@@ -1,5 +1,4 @@
-/* eslint-disable  max-classes-per-file */
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Screen = props => {
@@ -12,6 +11,10 @@ const Screen = props => {
       <span className="Screen">{value}</span>
     </div>
   );
+};
+
+Screen.propTypes = {
+  value: PropTypes.string.isRequired,
 };
 
 export default Screen;
