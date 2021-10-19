@@ -9,7 +9,7 @@ class Buttons extends React.Component {
   render() {
     return (
       <div className="buttons">
-        <MapButtons keys={this.button} />
+        <MapButtons keys={this.button} cb={this.props} />
       </div>
     );
   }
@@ -17,7 +17,7 @@ class Buttons extends React.Component {
 
 const MapButtons = props => props.keys.map(key => (
   <div key={key.toString()} className="button">
-    <button className="btn" type="button" value={key}>{key}</button>
+    <button onClick={props.cb.handleClick} className="btn" type="button" value={key}>{key}</button>
   </div>
 ));
 
