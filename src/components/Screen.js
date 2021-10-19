@@ -1,23 +1,20 @@
-/* eslint-disable  max-classes-per-file */
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import React from 'react';
 
-class Screen extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
+const Screen = props => {
+  const {
+    value,
+  } = props;
 
-  render() {
-    const {
-      value,
-    } = this.props;
-    return (
-      <div className="Display">
-        <span className="Screen">{value}</span>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="Display">
+      <span className="Screen">{value}</span>
+    </div>
+  );
+};
+
+Screen.propTypes = {
+  value: PropTypes.string.isRequired,
+};
 
 export default Screen;
