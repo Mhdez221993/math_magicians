@@ -1,3 +1,5 @@
+/* eslint-disable  max-classes-per-file */
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 class Screen extends React.Component {
@@ -7,9 +9,12 @@ class Screen extends React.Component {
   }
 
   render() {
+    const {
+      value,
+    } = this.props;
     return (
       <div className="Display">
-        <span className="Screen">0</span>
+        <span className="Screen">{value}</span>
       </div>
     );
   }
