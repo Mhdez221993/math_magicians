@@ -1,40 +1,31 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import getCurrOperation from '../logic/getCurrOperation';
 import Buttons from './Buttons';
 import Screen from './Screen';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.handleClick = this.handleClick.bind(this);
-  }
+const Calculator = () => {
+  const [state, setItem] = useState(
+    (state, newState) => ({ ...state, ...newState }),
+    {},
+  );
 
-  handleClick(event) {
-    event.preventDefault();
-    const newState = calculate(this.state, event.target.value);
-    const {
-      total, next, operation,
-    } = newState;
-    this.setState({
-      total,
-      next,
-      operation,
-    });
-  }
+  const handleClick = event => {
+    setItem(calculate(state, event.target.value));
+  };
 
-  render() {
-    const {
-      next, total,
-    } = this.state;
-    const curr = next || total || '0';
-    return (
-      <div className="Calculator">
-        <Screen value={curr} />
-        <Buttons handleClick={this.handleClick} />
-      </div>
-    );
-  }
-}
+  const {
+    next, total, operation, equalSign,
+  } = state;
+  const curr = next || total || '0';
+  const currOperation = getCurrOperation([total, operation, next, equalSign]);
+  return (
+    <div className="Calculator">
+      <Screen value={[currOperation]} />
+      <Screen value={curr} />
+      <Buttons handleClick={handleClick} />
+    </div>
+  );
+};
 
 export default Calculator;
