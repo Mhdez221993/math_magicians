@@ -13,6 +13,7 @@
   width: 400px;
   height: 500px;
   display: grid;
+  margin-top: 60px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr;
 }
