@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen renders correctly 1`] = `
+<div
+  className="Display"
+>
+  <span
+    className="Screen"
+  >
+    0
+  </span>
+</div>
+`;

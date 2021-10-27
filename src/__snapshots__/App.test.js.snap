@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navBar"
+  >
+    <ul
+      className="nav-list"
+    >
+      <li
+        className="nav-links"
+      >
+        <a
+          aria-current="page"
+          className="active-link"
+          href="#/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Math Magicians
+        </a>
+      </li>
+      <li
+        className="nav-links"
+      >
+        <a
+          aria-current="page"
+          className="active-link"
+          href="#/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="nav-links"
+      >
+        <a
+          aria-current={null}
+          href="#/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="nav-links"
+      >
+        <a
+          aria-current={null}
+          href="#/quotes"
+          onClick={[Function]}
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="description"
+  >
+    <h2>
+      Welcome to the Math Magicians App
+    </h2>
+    <p>
+      Calculator provides simple and advanced mathematical functions in a beautifully designed app. Perform basic calculations such as addition, subtraction, multiplication, and division Do scientific operations such as trigonometric, logarithmic, and exponential functions
+    </p>
+  </div>
+</div>
+`;
