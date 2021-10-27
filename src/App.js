@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Calculate from './pages/Calculate';
 import Home from './pages/Home';
@@ -14,18 +14,20 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/quotes">
-            <Quotes />
-          </Route>
-          <Route path="/calculator">
-            <Calculate />
-          </Route>
-        </Switch>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/quotes">
+              <Quotes />
+            </Route>
+            <Route path="/calculator">
+              <Calculate />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }
