@@ -11,7 +11,6 @@ describe('test calculator and correct rendering of the Home page', () => {
     expect(tree).toMatchSnapshot();
   });
 
-
   it('Test Home title', () => {
     const { getByText } = render(<Home />);
 
