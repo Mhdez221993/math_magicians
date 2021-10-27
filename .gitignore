@@ -25,3 +25,4 @@ yarn-error.log*
 *.log
 .idea/
 debug/
+.env
