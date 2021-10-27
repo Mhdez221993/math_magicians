@@ -6,6 +6,8 @@ exports[`Screen snapshot test 1`] = `
 >
   <span
     className="Screen"
-  />
+  >
+    0
+  </span>
 </div>
 `;
