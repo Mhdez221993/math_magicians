@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App snapshot test 1`] = `
-<div
-  className="App"
->
+Array [
   <nav
     className="navBar"
   >
@@ -59,7 +57,7 @@ exports[`App snapshot test 1`] = `
         </a>
       </li>
     </ul>
-  </nav>
+  </nav>,
   <div
     className="description"
   >
@@ -69,6 +67,6 @@ exports[`App snapshot test 1`] = `
     <p>
       Calculator provides simple and advanced mathematical functions in a beautifully designed app. Perform basic calculations such as addition, subtraction, multiplication, and division Do scientific operations such as trigonometric, logarithmic, and exponential functions
     </p>
-  </div>
-</div>
+  </div>,
+]
 `;
