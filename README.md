@@ -16,7 +16,6 @@ Perform basic calculations such as addition, subtraction, multiplication, and di
 - Node.JS
 - Jest
 
-* [hg-pages live](https://mhdez221993.github.io/math-magicians/#/math-magicians/)
 * [Heroku live](https://hdez-math-magicians.herokuapp.com/#/)
 * [Netlify live](https://friendly-lumiere-ed6e74.netlify.app/#/)
 
