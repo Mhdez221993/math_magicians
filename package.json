@@ -2,7 +2,6 @@
   "name": "react-templet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mhdez221993.github.io/math-magicians/",
   "engines": {
     "node": "14.17.6"
   },
