@@ -18,7 +18,7 @@ Perform basic calculations such as addition, subtraction, multiplication, and di
 
 * [hg-pages live](https://mhdez221993.github.io/math-magicians/#/math-magicians/)
 * [Heroku live](https://hdez-math-magicians.herokuapp.com/#/)
-* [Netlify live](https://math-magicians-001.herokuapp.com/math-magicians/)
+* [Netlify live](https://friendly-lumiere-ed6e74.netlify.app/#/)
 
 ## Getting Started
 
