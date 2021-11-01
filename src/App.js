@@ -5,32 +5,32 @@ import Calculate from './pages/Calculate';
 import Home from './pages/Home';
 import Quotes from './pages/Quotes';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
+const routes = [
+  {
+    name: 'Home',
+    path: '/',
+    component: <Home />,
+  },
+  {
+    name: 'Calculator',
+    path: '/calculator',
+    component: <Calculate />,
+  },
+  {
+    name: 'Quotes',
+    path: '/quotes',
+    component: <Quotes />,
+  },
+];
 
-  render() {
-    return (
-      <div className="App">
-        <Router>
-          <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/quotes">
-              <Quotes />
-            </Route>
-            <Route path="/calculator">
-              <Calculate />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router basename={process.env.PUBLIC_URL}>
+    <Navbar />
+    <Switch>
+      {routes.map(({ path, component }) => (
+        <Route exact key={path} path={path}>{component}</Route>))}
+    </Switch>
+  </Router>
+);
 
 export default App;
