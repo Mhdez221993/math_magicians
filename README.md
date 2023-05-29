@@ -11,9 +11,7 @@ Perform basic calculations such as addition, subtraction, multiplication, and di
 
 - JavaScript
 - React
-- Webpack
 - HTML/SCSS
-- Node.JS
 - Jest
 
 * [Heroku live](https://hdez-math-magicians.herokuapp.com/#/)
