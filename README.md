@@ -14,7 +14,7 @@ Perform basic calculations such as addition, subtraction, multiplication, and di
 - HTML/SCSS
 - Jest
 
-* [Go live](https://mhdez221993.github.io/portfolio/)
+* [Go live](https://mhdez221993.github.io/math_magicians/)
 
 ## Getting Started
 
