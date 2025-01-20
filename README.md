@@ -14,8 +14,7 @@ Perform basic calculations such as addition, subtraction, multiplication, and di
 - HTML/SCSS
 - Jest
 
-* [Heroku live](https://hdez-math-magicians.herokuapp.com/#/)
-* [Netlify live](https://friendly-lumiere-ed6e74.netlify.app/#/)
+* [Go live](https://mhdez221993.github.io/math_magicians/)
 
 ## Getting Started
 
